@@ -9,6 +9,8 @@ def validate_character_name(character_name):
         return 'The character name is too long'
     elif character_name.find(' ') != -1:
         return 'The character name should not contain spaces'
+    elif len(character_name) == 0:
+        return 'The character should have a name'
 
 # Function create character
 def create_character (character_name, character_strength, character_intelligence, character_charisma):
